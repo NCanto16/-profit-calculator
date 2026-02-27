@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="back.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+        <div class="row">
+          <div class="col-4">
+            <div>
+              <h1 class="title">Calculadora de lucros</h1>
+            </div>
+          </div>
+          <div class="col-5"></div>
+          <div class="col-3">
+            <div>
+              <a class="pageLink" href="planilhas/planilhas.html">Planilhas</a>
+              <a class="pageLink" href="index.html">Inserção de dados</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- <div class="row justify-content-evenly">
+        <div class="col-4 bg1">
+          <div>
+            <h1>Dados do Produto</h1>
+          </div>
+
+          <form class="row g-3">            
+            <div class="col-12">
+              <label for="Nome" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="Nome" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+          </form> -->
+
+          <form action="">
+            <label for="nome">Nome do Produto</label>
+            <input id="nome" name="nome" type="text" placeholder="Nome da peça" />
+            <input
+              id="valorVenda"
+              name="valorVenda"
+              type="text"
+              placeholder="Valor de Venda"
+            />
+            <input
+              id="valor"
+              name="valor"
+              type="number"
+              placeholder="Valor da peça"
+            />
+            <input id="peso" name="peso" type="number" placeholder="Peso" />
+            <input
+              id="lucro"
+              name="lucro"
+              type="number"
+              placeholder="Lucro Esperado"
+            />
+            <input id="taxa" name="taxa" type="number" placeholder="Taxa" />
+            <input id="foto" name="foto" type="file" placeholder="Foto" />
+          </form>
+          <button onclick="calculoGeral()">Calcular</button>
+        </div>
+        <div class="col-4 bg2">
+          <div class="resultados">
+            <div class="resultadoValorTotalY">
+              <h1>Valor Total em Yuans</h1>
+              <p></p>
+            </div>
+            <div class="resultadoValorTotalRS">
+              <h1>Valor Total em Reais</h1>
+              <p></p>
+            </div>
+            <div class="peso">
+              <h1>Peso</h1>
+              <p></p>
+            </div>
+            <div class="resultadoValorFrete">
+              <h1>Valor debitado</h1>
+              <p></p>
+            </div>
+            <div class="resultadoValorFrete">
+              <h1>Valor Venda</h1>
+              <p></p>
+            </div>
+            <div class="resultadoValorFrete">
+              <h1>Valor da Taxa de Pagamento</h1>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
