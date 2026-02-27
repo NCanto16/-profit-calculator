@@ -19,6 +19,7 @@
     ></script>
   </head>
   <body>
+
     <header>
         <div class="row">
           <div class="col-4">
@@ -36,8 +37,9 @@
         </div>
       </div>
     </header>
+
     <main>
-      <!-- <div class="row justify-content-evenly">
+      <div class="row justify-content-evenly">
         <div class="col-4 bg1">
           <div>
             <h1>Dados do Produto</h1>
@@ -45,64 +47,29 @@
 
           <form class="row g-3">            
             <div class="col-12">
-              <label for="Nome" class="form-label">Nome</label>
-              <input type="text" class="form-control" id="Nome" placeholder="1234 Main St">
-            </div>
-            <div class="col-12">
-              <label for="inputAddress2" class="form-label">Address 2</label>
-              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+              <label for="Nome" class="form-label">Nome do Produto</label>
+              <input type="text" class="form-control" id="Nome" placeholder="">
             </div>
             <div class="col-md-6">
-              <label for="inputCity" class="form-label">City</label>
-              <input type="text" class="form-control" id="inputCity">
+              <label for="preco" class="form-label">Preço do Produto</label>
+              <input type="text" class="form-control" id="preco">
             </div>
-            <div class="col-md-4">
-              <label for="inputState" class="form-label">State</label>
-              <select id="inputState" class="form-select">
-                <option selected>Choose...</option>
-                <option>...</option>
-              </select>
+            <div class="col-md-6">
+              <label for="peso" class="form-label">Peso do Produto</label>
+              <input type="text" class="form-control" id="peso">
             </div>
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                  Check me out
-                </label>
-              </div>
+            <div class="col-md-6">
+              <label for="taxa" class="form-label">Taxa de importação</label>
+              <input type="text" class="form-control" id="taxa">
             </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary">Sign in</button>
+            <div class="col-md-6">
+              <label for="lucro" class="form-label">Lucro Esperado</label>
+              <input type="text" class="form-control" id="lucro">
             </div>
-          </form> -->
-
-          <form action="">
-            <label for="nome">Nome do Produto</label>
-            <input id="nome" name="nome" type="text" placeholder="Nome da peça" />
-            <input
-              id="valorVenda"
-              name="valorVenda"
-              type="text"
-              placeholder="Valor de Venda"
-            />
-            <input
-              id="valor"
-              name="valor"
-              type="number"
-              placeholder="Valor da peça"
-            />
-            <input id="peso" name="peso" type="number" placeholder="Peso" />
-            <input
-              id="lucro"
-              name="lucro"
-              type="number"
-              placeholder="Lucro Esperado"
-            />
-            <input id="taxa" name="taxa" type="number" placeholder="Taxa" />
-            <input id="foto" name="foto" type="file" placeholder="Foto" />
           </form>
           <button onclick="calculoGeral()">Calcular</button>
         </div>
+
         <div class="col-4 bg2">
           <div class="resultados">
             <div class="resultadoValorTotalY">

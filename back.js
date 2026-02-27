@@ -19,14 +19,14 @@ console.log("valor frete " + calcularFrete());
 
 function valorTotalY() {
   const frete = calcularFrete();
-  const valorPeca = valores("valor");
+  const valorPeca = valores("preco");
   return frete + valorPeca;
 }
 
 console.log(valorTotalY());
 
 function converterYuan() {
-  const valorPeca = valores("valor");
+  const valorPeca = valores("preco");
   const frete = calcularFrete();
   const cotacaoYuan = 1.23;
 
@@ -51,22 +51,12 @@ function valorTotalRS() {
 
 console.log("valor total rs " + valorTotalRS());
 
-function CalcularLucro() {
-  const valorVenda = valores("valorVenda");
-  const taxaInfinite = 11.57;
-  const custoTotal = valorTotalRS();
-  const valorDebitado =
-    Math.round((valorVenda - valorVenda * (taxaInfinite / 100)) * 100) / 100;
-  const lucroReal = Math.round(valorDebitado - custoTotal);
-  return lucroReal;
-}
-
 function calcularPrecoVenda() {
-  const taxaNuvem = 11;
+  const taxaNuvem = 11.57;
   const custoTotal = valorTotalRS();
   const lucroDesejado = valores("lucro");
   const taxa = taxaNuvem / 100;
-  const precoVenda = (custoTotal + lucroDesejado) / (1 - taxa);
+  const precoVenda = Math.round((custoTotal + lucroDesejado) / (1 - taxa)*100) /100;
   return precoVenda;
 }
 
@@ -83,8 +73,6 @@ function calculoGeral() {
   console.log("valor yuan convertido: " + yuanConvertido);
   console.log("valor dolar convertido: " + dolarConvertido);
 
-  const lucro = CalcularLucro();
-  console.log("lucro real: " + lucro);
   const precoVenda = calcularPrecoVenda();
   console.log("preço de venda: " + precoVenda);
 }
