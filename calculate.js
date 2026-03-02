@@ -28,7 +28,7 @@ console.log(valorTotalY());
 function converterYuan() {
   const valorPeca = valores("preco");
   const frete = calcularFrete();
-  const cotacaoYuan = 1.23;
+  const cotacaoYuan = 1.24;
 
   return Math.round((valorPeca + frete) / cotacaoYuan);
 }
@@ -56,7 +56,8 @@ function calcularPrecoVenda() {
   const custoTotal = valorTotalRS();
   const lucroDesejado = valores("lucro");
   const taxa = taxaNuvem / 100;
-  const precoVenda = Math.round((custoTotal + lucroDesejado) / (1 - taxa)*100) /100;
+  const precoVenda =
+    Math.round(((custoTotal + lucroDesejado) / (1 - taxa)) * 100) / 100;
   return precoVenda;
 }
 
