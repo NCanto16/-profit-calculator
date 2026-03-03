@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="back.js"></script>
+    <script type="module" src="render.js"></script>
+    <script></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -20,7 +21,7 @@
   </head>
   <body>
     <header>
-          <div class="divTitle"><h1 class="title">Calculadora de lucros</h1></div>
+      <div class="divTitle"><h1 class="title">Calculadora de lucros</h1></div>
     </header>
 
     <main>
@@ -36,13 +37,8 @@
 
           <form class="row g-3">
             <div class="col-12">
-              <label for="Nome" class="form-label">Nome do Produto</label>
-              <input
-                type="text"
-                class="form-control"
-                id="Nome"
-                placeholder=""
-              />
+              <label for="nome" class="form-label">Nome do Produto</label>
+              <input type="text" class="form-control" id="nome" />
             </div>
             <div class="col-md-6">
               <label for="preco" class="form-label">Preço do Produto</label>
@@ -61,11 +57,11 @@
               <input type="text" class="form-control" id="lucro" />
             </div>
           </form>
-          <button onclick="calculoGeral()">Calcular</button>
+          <button id="btnCalcular">Calcular</button>
         </div>
 
         <div class="col-4 bg2">
-          <div class="results">
+          <div id="results">
             <div class="components">
               <div class="moneyFig">
                 <svg
@@ -102,31 +98,7 @@
 
         <!-- <div class="col-4 bg2">
           <div class="resultados">
-            <div class="resultadoValorTotalY">
-              <h1>Valor Total em Yuans</h1>
-              <p></p>
-            </div>
-            <div class="resultadoValorTotalRS">
-              <h1>Valor Total em Reais</h1>
-              <p></p>
-            </div>
-            <div class="peso">
-              <h1>Peso</h1>
-              <p></p>
-            </div>
-            <div class="resultadoValorFrete">
-              <h1>Valor debitado</h1>
-              <p></p>
-            </div>
-            <div class="resultadoValorFrete">
-              <h1>Valor Venda</h1>
-              <p></p>
-            </div>
-            <div class="resultadoValorFrete">
-              <h1>Valor da Taxa de Pagamento</h1>
-              <p></p>
-            </div>
-          </div>
+            
         </div> -->
       </div>
     </main>

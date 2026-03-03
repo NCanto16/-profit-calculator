@@ -1,3 +1,5 @@
+const taxaNuvem = 11.57;
+
 function valores(id) {
   return Number(document.getElementById(id).value.replace(",", "."));
 }
@@ -15,15 +17,11 @@ function calcularFrete() {
   return precoBase + cemEmCem * precoVariavel;
 }
 
-console.log("valor frete " + calcularFrete());
-
 function valorTotalY() {
   const frete = calcularFrete();
   const valorPeca = valores("preco");
   return frete + valorPeca;
 }
-
-console.log(valorTotalY());
 
 function converterYuan() {
   const valorPeca = valores("preco");
@@ -33,15 +31,11 @@ function converterYuan() {
   return Math.round((valorPeca + frete) / cotacaoYuan);
 }
 
-console.log("valor y " + converterYuan());
-
 function converterDolar() {
   const taxa = valores("taxa");
   const cotacaoDolar = 5.23;
   return Math.round(taxa * cotacaoDolar * 100) / 100;
 }
-
-console.log("valor dolar " + converterDolar());
 
 function valorTotalRS() {
   const valorTaxa = converterDolar();
@@ -49,10 +43,7 @@ function valorTotalRS() {
   return valorTaxa + valorYuanTotal;
 }
 
-console.log("valor total rs " + valorTotalRS());
-
 function calcularPrecoVenda() {
-  const taxaNuvem = 11.57;
   const custoTotal = valorTotalRS();
   const lucroDesejado = valores("lucro");
   const taxa = taxaNuvem / 100;
@@ -61,19 +52,41 @@ function calcularPrecoVenda() {
   return precoVenda;
 }
 
-function calculoGeral() {
-  const frete = calcularFrete();
-  const valorYuan = valorTotalY();
-  const valorReais = valorTotalRS();
-  const yuanConvertido = converterYuan();
-  const dolarConvertido = converterDolar();
-
-  console.log("valor frete: " + frete);
-  console.log("valor total em yuan: " + valorYuan);
-  console.log("valor total em reais: " + valorReais);
-  console.log("valor yuan convertido: " + yuanConvertido);
-  console.log("valor dolar convertido: " + dolarConvertido);
-
+function valorTaxaTotal() {
   const precoVenda = calcularPrecoVenda();
-  console.log("preço de venda: " + precoVenda);
+  return Math.round(precoVenda * (taxaNuvem / 100) * 100) / 100;
 }
+
+function valorTotalDebitado() {
+  return calcularPrecoVenda() - valorTaxaTotal();
+}
+
+export const frete = calcularFrete();
+export const valorYuan = valorTotalY();
+export const valorReais = valorTotalRS();
+export const yuanConvertido = converterYuan();
+export const dolarConvertido = converterDolar();
+export const valorTaxa = valorTaxaTotal();
+export const valorDebitado = valorTotalDebitado();
+export const precoVenda = calcularPrecoVenda();
+
+//  function calculoGeral() {
+//   const frete = calcularFrete();
+//   const valorYuan = valorTotalY();
+//   const valorReais = valorTotalRS();
+//   const yuanConvertido = converterYuan();
+//   const dolarConvertido = converterDolar();
+//   const valorTaxa = valorTaxaTotal();
+//   const valorDebitado = valorTotalDebitado();
+
+//   console.log("valor frete: " + frete);
+//   console.log("valor total em yuan: " + valorYuan);
+//   console.log("valor total em reais: " + valorReais);
+//   console.log("valor yuan convertido: " + yuanConvertido);
+//   console.log("valor dolar convertido: " + dolarConvertido);
+//   console.log("valor total da taxa: " + valorTaxa);
+//   console.log("valor debitado: " + valorDebitado);
+
+//   const precoVenda = calcularPrecoVenda();
+//   console.log("preço de venda: " + precoVenda);
+// }
