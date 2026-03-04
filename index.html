@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- <script src="calculate.js" defer></script> -->
     <script type="module" src="render.js" defer></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -21,14 +20,22 @@
   </head>
   <body>
     <header>
-      <div class="divTitle"><h1 class="title">Calculadora de lucros</h1></div>
+      <div class=""><p class="title">Calculadora de Lucros</p></div>
+      <div class="divLinks">
+        <a class="links" href="https://www.cssbuy.com/#">CssBuy</a>
+        <a
+          class="links"
+          href="https://docs.google.com/spreadsheets/d/15Wm4Ov0pvu1q4cmyYj8DeKKiOtCqq8iq7fl3MA6PJ1I/edit?gid=0#gid=0"
+          >Planilha Peças</a
+        >
+      </div>
     </header>
 
     <main>
       <div class="row justify-content-evenly">
-        <div class="col-4 bg1">
+        <div class="col-4 divInputs">
           <div>
-            <h1>Dados do Produto</h1>
+            <h1 class="">Dados do Produto</h1>
             <p>
               Preencha os dados do produto para realizar o calulo de valor de
               venda ideal.
@@ -42,19 +49,19 @@
             </div>
             <div class="col-md-6">
               <label for="preco" class="form-label">Preço do Produto</label>
-              <input type="text" class="form-control" id="preco" />
+              <input type="number" class="form-control" id="preco" />
             </div>
             <div class="col-md-6">
               <label for="peso" class="form-label">Peso do Produto</label>
-              <input type="text" class="form-control" id="peso" />
+              <input type="number" class="form-control" id="peso" />
             </div>
             <div class="col-md-6">
               <label for="taxa" class="form-label">Taxa de importação</label>
-              <input type="text" class="form-control" id="taxa" />
+              <input type="number" class="form-control" id="taxa" />
             </div>
             <div class="col-md-6">
               <label for="lucro" class="form-label">Lucro Esperado</label>
-              <input type="text" class="form-control" id="lucro" />
+              <input type="number" class="form-control" id="lucro" />
             </div>
           </form>
           <button id="btnCalcular">Calcular</button>
@@ -96,11 +103,6 @@
             </div>
           </div>
         </div>
-
-        <!-- <div class="col-4 bg2">
-          <div class="resultados">
-            
-        </div> -->
       </div>
     </main>
   </body>

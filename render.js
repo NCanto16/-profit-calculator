@@ -1,15 +1,23 @@
 import {
-  frete,
-  valorYuan,
-  valorReais,
-  precoVenda,
-  valorTaxa,
-  valorDebitado,
+  calcularFrete,
+  valorTotalY,
+  valorTotalRS,
+  converterDolar,
+  valorTaxaTotal,
+  valorTotalDebitado,
+  calcularPrecoVenda,
 } from "./calculate.js";
 
 export function render() {
-  const nome = document.getElementById("nome").value;
   const results = document.getElementById("results");
+  const nome = document.getElementById("nome").value;
+  const frete = calcularFrete();
+  const valorYuan = valorTotalY();
+  const valorReais = valorTotalRS();
+  const dolar = converterDolar();
+  const valorTaxa = valorTaxaTotal();
+  const valorDebitado = valorTotalDebitado();
+  const precoVenda = calcularFrete();
 
   results.innerHTML = `
     <div>
@@ -24,7 +32,7 @@ export function render() {
               <p>${valorReais}</p>
             </div>
             <div class="resultadoValorFrete">
-              <h1>Peso</h1>
+              <h1>Valor Frete</h1>
               <p>${frete}</p>
             </div>
             <div class="resultadoValorFrete">
@@ -79,6 +87,11 @@ export function clearResults() {
               </div>
             </div>
   `;
+  document.getElementById("nome").value = "";
+  document.getElementById("peso").value = "";
+  document.getElementById("preco").value = "";
+  document.getElementById("taxa").value = "";
+  document.getElementById("lucro").value = "";
 
   console.log("render limpo");
 }

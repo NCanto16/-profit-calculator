@@ -2,28 +2,51 @@ header {
   background-color: #06233d;
   height: 100px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+
+#container{
+  margin-left: 0px;
+  margin-right: 0px;
+  max-width: 1650px;
 }
 
 .title {
   align-items: center;
   text-align: center;
   color: white;
+  font-size: 40px;
+  margin-left: 40px;
 }
 
-.pageLink {
+.divLinks{
+  margin-right: 40px ;
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+
+.links {
   color: #ee6a4a;
   text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 main {
+  padding-top: 70px;
   background-color: #f5f3f0;
 }
 
-.bg1 {
-  background-color: aqua;
+.divInputs {
+  background-color: #ffffff;
+  border: 3px solid #7a726883;
+  border-radius: 25px;
 }
+
+
+
 .bg2 {
   background-color: brown;
 }

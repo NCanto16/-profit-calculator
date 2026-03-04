@@ -1,0 +1,172 @@
+// let taxaNuvem = 11.57;
+
+// function valores(id) {
+//   return Number(document.getElementById(id).value.replace(",", "."));
+// }
+
+// function calcularFrete() {
+//   let peso = valores("peso");
+//   let precoBase = 50;
+//   let precoVariavel = 11.8;
+
+//   if (peso <= 100) {
+//     return precoBase;
+//   }
+//   let pesoAMais = peso - 100;
+//   let cemEmCem = Math.ceil(pesoAMais / 100);
+//   return precoBase + cemEmCem * precoVariavel;
+// }
+
+// function valorTotalY() {
+//   let frete = calcularFrete();
+//   let valorPeca = valores("preco");
+//   return frete + valorPeca;
+// }
+
+// function converterYuan() {
+//   let valorPeca = valores("preco");
+//   let frete = calcularFrete();
+//   let cotacaoYuan = 1.24;
+
+//   return Math.round((valorPeca + frete) / cotacaoYuan);
+// }
+
+// function converterDolar() {
+//   let taxa = valores("taxa");
+//   let cotacaoDolar = 5.23;
+//   return Math.round(taxa * cotacaoDolar * 100) / 100;
+// }
+
+// function valorTotalRS() {
+//   let valorTaxa = converterDolar();
+//   let valorYuanTotal = converterYuan();
+//   return valorTaxa + valorYuanTotal;
+// }
+
+// function calcularPrecoVenda() {
+//   let custoTotal = valorTotalRS();
+//   let lucroDesejado = valores("lucro");
+//   let taxa = taxaNuvem / 100;
+//   let precoVenda =
+//     Math.round(((custoTotal + lucroDesejado) / (1 - taxa)) * 100) / 100;
+//   return precoVenda;
+// }
+
+// function valorTaxaTotal() {
+//   let precoVenda = calcularPrecoVenda();
+//   return Math.round(precoVenda * (taxaNuvem / 100) * 100) / 100;
+// }
+
+// function valorTotalDebitado() {
+//   return Math.round(calcularPrecoVenda() - valorTaxaTotal()*100)/100;
+// }
+
+// function calculoGeral() {
+//   let frete = calcularFrete();
+//   let valorYuan = valorTotalY();
+//   let valorReais = valorTotalRS();
+//   let yuanConvertido = converterYuan();
+//   let dolarConvertido = converterDolar();
+//   let valorTaxa = valorTaxaTotal();
+//   let valorDebitado = valorTotalDebitado();
+
+//   console.log("valor frete: " + frete);
+//   console.log("valor total em yuan: " + valorYuan);
+//   console.log("valor total em reais: " + valorReais);
+//   console.log("valor yuan convertido: " + yuanConvertido);
+//   console.log("valor dolar convertido: " + dolarConvertido);
+//   console.log("valor total da taxa: " + valorTaxa);
+//   console.log("valor debitado: " + valorDebitado);
+
+//   let precoVenda = calcularPrecoVenda();
+//   console.log("preço de venda: " + precoVenda);
+// }
+
+// let button = document.getElementById("btnCalcular");
+// button.addEventListener("click", calculoGeral);
+
+// let nome = document.getElementById("nome").value;
+// let results = document.getElementById("results");
+
+// function render() {
+//   let frete = calcularFrete();
+//   let valorYuan = valorTotalY();
+//   let valorReais = valorTotalRS();
+//   let valorTaxa = valorTaxaTotal();
+//   let valorDebitado = valorTotalDebitado();
+//   let precoVenda = calcularPrecoVenda();
+
+//   results.innerHTML = `
+//     <div>
+//         <p>${nome}</p>
+//     </div>
+//     <div class="resultadoValorTotalY">
+//         <h1>Valor Total em Yuans</h1>
+//               <p>${valorYuan}</p>
+//             </div>
+//             <div class="resultadoValorTotalRS">
+//               <h1>Valor Total em Reais</h1>
+//               <p>${valorReais}</p>
+//             </div>
+//             <div class="resultadoValorFrete">
+//               <h1>Peso</h1>
+//               <p>${frete}</p>
+//             </div>
+//             <div class="resultadoValorFrete">
+//               <h1>Valor debitado</h1>
+//               <p>${valorDebitado}</p>
+//             </div>
+//             <div class="resultadoPrecoVenda">
+//               <h1>Valor Venda</h1>
+//               <p>${precoVenda}</p>
+//             </div>
+//             <div class="resultadoValorFrete">
+//               <h1>Valor da Taxa de Pagamento</h1>
+//               <p>${valorTaxa}</p>
+//             </div>
+//           </div>`;
+// }
+
+// let buttonRender = document.getElementById("btnCalcular");
+// buttonRender.addEventListener("click", render);
+
+// function clearResults() {
+//   results.innerHTML = `
+//   <div class="components">
+//               <div class="moneyFig">
+//                 <svg
+//                   xmlns="http://www.w3.org/2000/svg"
+//                   width="16"
+//                   height="16"
+//                   fill="currentColor"
+//                   class="bi bi-coin"
+//                   viewBox="0 0 16 16"
+//                 >
+//                   <path
+//                     d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518z"
+//                   />
+//                   <path
+//                     d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+//                   />
+//                   <path
+//                     d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11m0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12"
+//                   />
+//                 </svg>
+//               </div>
+//               <div class="textsResults">
+//                 <div class="titleResult"><p>Resultados aparecerão aqui</p></div>
+//                 <div class="descriptionResult">
+//                   <p>
+//                     Insira os dados do produto e clique em Calcular para ter os
+//                     resultados
+//                   </p>
+//                 </div>
+//               </div>
+//             </div>
+//   `;
+
+//   console.log("render limpo");
+// }
+
+// let buttonClear = document.getElementById("btnClear");
+// buttonClear.addEventListener("click", clearResults);
