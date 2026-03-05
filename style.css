@@ -6,7 +6,7 @@ header {
   align-items: center;
 }
 
-#container{
+#container {
   margin-left: 0px;
   margin-right: 0px;
   max-width: 1650px;
@@ -20,8 +20,8 @@ header {
   margin-left: 40px;
 }
 
-.divLinks{
-  margin-right: 40px ;
+.divLinks {
+  margin-right: 40px;
   display: flex;
   justify-content: space-between;
   width: 250px;
@@ -42,11 +42,43 @@ main {
 .divInputs {
   background-color: #ffffff;
   border: 3px solid #7a726883;
-  border-radius: 25px;
+  border-radius: 20px;
 }
 
+.inputsTitleDiv {
+ margin-top: 15px;
+ margin-left: 10px;
+}
 
+.inputsButtonDiv{
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 518px;
+}
+
+.inputsButton{
+  border-radius: 5px;
+  border: 2px solid #7a726883;
+}
+
+#btnCalcular{
+  width: 440px;
+  background-color: #06233d;
+  color: #ffffff;
+}
+
+#btnClear{
+  background-color: #f5f3f0;
+  
+}
+#btnClear:hover{
+  background-color: #ee6a4a;
+}
 
 .bg2 {
   background-color: brown;
+
 }
