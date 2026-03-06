@@ -17,7 +17,7 @@ export function render() {
   const dolar = converterDolar();
   const valorTaxa = valorTaxaTotal();
   const valorDebitado = valorTotalDebitado();
-  const precoVenda = calcularFrete();
+  const precoVenda = calcularPrecoVenda();
 
   results.innerHTML = `
     <div>
