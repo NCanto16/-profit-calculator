@@ -1,0 +1,20 @@
+.titleComponents {
+  font-size: 12px;
+}
+.textsResults {
+  flex-direction: column;
+  text-align: center;
+}
+
+.titleResult {
+  font-weight: bold;
+}
+
+.resultadoPrecoVenda {
+  background-color: #06233d;
+  border-radius: 5px;
+}
+
+.divComponents {
+  display: flex;
+}

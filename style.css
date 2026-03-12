@@ -1,3 +1,8 @@
+html,
+body {
+  background-color: #f3f3f3;
+}
+
 header {
   background-color: #06233d;
   height: 100px;
@@ -24,6 +29,7 @@ header {
   margin-right: 2rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 15%;
 }
 
@@ -35,7 +41,7 @@ header {
 }
 
 main {
-  padding-top: 70px;
+  padding-top: 6rem;
   background-color: #f5f3f0;
 }
 
@@ -46,14 +52,20 @@ main {
 }
 
 .inputsTitleDiv {
-  margin-top: 15px;
-  margin-left: 10px;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
 }
 
 .inputsSubTitle {
   color: #6d6059;
   font-size: 20px;
 }
+
+.padInput {
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
 .inputsLineDiv {
   display: flex;
   justify-content: center;
@@ -61,29 +73,29 @@ main {
 
 .inputsLine {
   border-bottom: 1px solid #7a726883;
-  margin-top: 15px;
-  width: 800px;
+  margin-top: 0, 5rem;
+  width: 95%;
 }
 
 .inputsButtonDiv {
-  margin-top: 20px;
-  margin-left: 10px;
-  margin-bottom: 15px;
+  margin-top: clamp(1rem, 5vh, 2rem);
+  margin-right: clamp(0.5rem, 2vw, 1rem);
+  margin-bottom: clamp(1rem, 5vh, 2rem);
+  margin-left: clamp(0.5rem, 2vw, 1rem);
   display: flex;
-  justify-content: space-between;
-  width: px;
+  gap: 2rem;
 }
 
 .btnCalcularActive {
-  width: 300px;
-  height: 45px;
+  width: clamp(5rem, 80%, 35rem);
+  height: 3rem;
   background-color: #06233d;
   color: #ffffff;
   border: none;
   border-radius: 5px;
 }
 
-.btnCalcularDisable {
+/* .btnCalcularDisable {
   width: 300px;
   height: 45px;
   border-radius: 5px;
@@ -92,14 +104,14 @@ main {
   opacity: 50%;
   pointer-events: none;
   border: none;
-}
+} */
 
 #btnClear {
   border-radius: 5px;
   border: 2px solid #7a726883;
   background-color: #f5f3f0;
-  width: 100px;
-  height: 45px;
+  width: 8.5rem;
+  height: 3rem;
 }
 
 #btnClear:hover {
@@ -116,40 +128,19 @@ main {
   align-items: center;
 }
 
-.results{
+.results {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.components{
+.components {
   flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.textsResults{
-  flex-direction: column;
-  text-align: center;
-}
-
-.titleResult{
-  font-weight: bold;
-}
 
 
-.resultadoPrecoVenda{
-  background-color: #06233d;
-  border-radius: 5px;
-
-}
-  
-.divComponents{
-  display: flex;
-}
-
-.titleComponents{
-  font-size: 12px;
-}
 
