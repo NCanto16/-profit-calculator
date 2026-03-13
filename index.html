@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="render.css">
+    <link rel="stylesheet" href="render.css" />
     <script type="module" src="render.js" defer></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -43,9 +43,9 @@
             </p>
           </div>
 
-          <form class="row g-4 ms-0.5">
-            <div class="col-11 ms-4 me-4 ">
-              <label for="nome" class="form-label input"
+          <form class="row g-4 ms-1 me-1">
+            <div class="col-12 px-4">
+              <label for="nome" class="form-label mb-2 input"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -79,8 +79,8 @@
               <div class="inputsLine"></div>
             </div>
 
-            <div class="col-md-5 ms-4 me-4">
-              <label for="preco" class="form-label">
+            <div class="col-md-6 px-4">
+              <label for="preco" class="form-label mb-2 textPc">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -99,6 +99,25 @@
                 </svg>
                 Preço do Produto (CN¥)</label
               >
+              <label for="preco" class="form-label mb-2 textNote">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-japanese-yen-icon lucide-japanese-yen"
+                >
+                  <path d="M12 9.5V21m0-11.5L6 3m6 6.5L18 3" />
+                  <path d="M6 15h12" />
+                  <path d="M6 11h12" />
+                </svg>
+                Preço da Peça (CN¥)</label
+              >
               <input
                 type="number"
                 class="form-control"
@@ -106,8 +125,8 @@
                 placeholder="0,00"
               />
             </div>
-            <div class="col-md-5 ms-4 me-4">
-              <label for="peso" class="form-label">
+            <div class="col-md-6 px-4">
+              <label for="peso" class="form-label mb-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -134,8 +153,8 @@
                 placeholder="0,00"
               />
             </div>
-            <div class="col-md-5 ms-4 me-4">
-              <label for="taxa" class="form-label">
+            <div class="col-md-6 px-4">
+              <label for="taxa" class="form-label mb-2 textPc">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -157,6 +176,28 @@
                 </svg>
                 Taxa de importação ($)</label
               >
+              <label for="taxa" class="form-label textNote">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-file-xcorner-icon lucide-file-x-corner"
+                >
+                  <path
+                    d="M11 22H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v5"
+                  />
+                  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+                  <path d="m15 17 5 5" />
+                  <path d="m20 17-5 5" />
+                </svg>
+                Taxa de import. ($)</label
+              >
               <input
                 type="number"
                 class="form-control"
@@ -164,8 +205,8 @@
                 placeholder="0,00"
               />
             </div>
-            <div class="col-md-5 ms-4 me-4">
-              <label for="lucro" class="form-label">
+            <div class="col-md-6 px-4">
+              <label for="lucro" class="form-label mb-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"

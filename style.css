@@ -71,6 +71,21 @@ main {
   justify-content: center;
 }
 
+.textNote{
+  display: none;
+}
+
+@media( max-width: 1366px){
+  .textNote{
+    display: inline;
+    margin-bottom: 2rem;
+  }
+
+  .textPc{
+    display: none;
+  }
+}
+
 .inputsLine {
   border-bottom: 1px solid #7a726883;
   margin-top: 0, 5rem;
