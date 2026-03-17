@@ -1,6 +1,16 @@
+.divResultsRender {
+  background-color: #ffffff;
+  border: 2px solid #ddd7cd;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
 .titleComponents {
   font-size: 12px;
+  color: #6d6059;
 }
+
 .textsResults {
   flex-direction: column;
   text-align: center;
@@ -17,4 +27,12 @@
 
 .divComponents {
   display: flex;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.renderNome {
+  display: flex;
+  padding-top: 1rem;
+  padding-left: 1rem;
 }
