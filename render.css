@@ -7,8 +7,10 @@
 }
 
 .titleComponents {
-  font-size: 12px;
+  font-size: 16px;
   color: #6d6059;
+  margin-bottom: 0;
+  padding-left: 0.5rem;
 }
 
 .textsResults {
@@ -20,19 +22,58 @@
   font-weight: bold;
 }
 
+.divResultadoPrecoVenda{
+  display: flex;
+  justify-content: center ;
+}
+
 .resultadoPrecoVenda {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   background-color: #06233d;
   border-radius: 5px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: clamp(5rem, 80%, 35rem);
+}
+
+.precoVendaTitle{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-left: 1rem;
+  font-size: 20px;
+}
+
+.valorPrecoVenda{
+  margin-right: 1rem;
+  font-size: 20px;
 }
 
 .divComponents {
   display: flex;
   padding-top: 1rem;
   padding-left: 1rem;
+  padding-right: 1rem;
+  justify-content: space-between;
 }
 
 .renderNome {
-  display: flex;
   padding-top: 1rem;
   padding-left: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.svgTitleComponent{
+  display: flex;
+  align-items: center;
+}
+
+.inputsLineRender {
+  border-bottom: 1px solid #7a726883;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
+  width: 95%;
 }

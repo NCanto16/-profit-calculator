@@ -149,7 +149,7 @@ export function render() {
   <div class="resultComponent"><p>${dolar}</p></div>
 </div>
 <div class="inputsLineDiv">
-  <div class="inputsLine"></div>
+  <div class="inputsLineRender"></div>
 </div>
 <div class="divComponents">
   <div class="svgTitleComponent">
@@ -251,14 +251,14 @@ export function render() {
 </div>
 
 <div class="inputsLineDiv">
-  <div class="inputsLine"></div>
+  <div class="inputsLineRender"></div>
 </div>
-
-<div class="resultadoPrecoVenda">
-  <h1>Valor Venda</h1>
-  <p>${precoVenda}</p>
+<div class="divResultadoPrecoVenda">
+  <div class="resultadoPrecoVenda">
+    <h1 class= "precoVendaTitle">Valor Venda</h1>
+    <p class="valorPrecoVenda">${precoVenda}</p>
+  </div>
 </div>
-
 
 `;
 }
