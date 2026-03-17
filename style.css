@@ -110,17 +110,6 @@ main {
   border-radius: 5px;
 }
 
-/* .btnCalcularDisable {
-  width: 300px;
-  height: 45px;
-  border-radius: 5px;
-  background-color: #06233d;
-  color: #ffffff;
-  opacity: 50%;
-  pointer-events: none;
-  border: none;
-} */
-
 #btnClear {
   border-radius: 5px;
   border: 2px solid #7a726883;

@@ -259,7 +259,6 @@ export function render() {
     <p class="valorPrecoVenda">${precoVenda}</p>
   </div>
 </div>
-
 `;
 }
 
