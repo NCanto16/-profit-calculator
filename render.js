@@ -71,7 +71,7 @@ export function render() {
     </svg>
     <h1 class="titleComponents">Custo da Peça</h1>
   </div>
-  <div class="resultComponent"><p>${preco}</p></div>
+  <div class="resultComponent"><p>CN¥ ${preco}</p></div>
 </div>
 
 <div class="divComponents">
@@ -95,7 +95,7 @@ export function render() {
     <h1 class="titleComponents">Valor Frete</h1>
   </div>
 
-  <div class="resultComponent"><p>${frete}</p></div>
+  <div class="resultComponent"><p>CN¥ ${frete}</p></div>
 </div>
 <div class="divComponents">
   <div class="svgTitleComponent">
@@ -122,7 +122,7 @@ export function render() {
     <h1 class="titleComponents">Valor Total em Yuans</h1>
   </div>
 
-  <div class="resultComponent"><p>${valorYuan}</p></div>
+  <div class="resultComponent"><p>CN¥ ${valorYuan}</p></div>
 </div>
 <div class="divComponents">
   <div class="svgTitleComponent">
@@ -146,7 +146,7 @@ export function render() {
     </svg>
     <h1 class="titleComponents">Valor da taxa de importação</h1>
   </div>
-  <div class="resultComponent"><p>${dolar}</p></div>
+  <div class="resultComponent"><p> R$ ${dolar}</p></div>
 </div>
 <div class="inputsLineDiv">
   <div class="inputsLineRender"></div>
@@ -172,7 +172,7 @@ export function render() {
     </svg>
     <h1 class="titleComponents">Valor Total em Reais</h1>
   </div>
-  <div class="resultComponent"><p>${valorReais}</p></div>
+  <div class="resultComponent"><p>R$ ${valorReais}</p></div>
 </div>
 <div class="divComponents">
   <div class="svgTitleComponent">
@@ -196,7 +196,7 @@ export function render() {
     <h1 class="titleComponents">Valor debitado</h1>
   </div>
   <div class="resultComponent">
-    <p>${valorDebitado}</p>
+    <p>R$ ${valorDebitado}</p>
   </div>
 </div>
 <div class="divComponents">
@@ -223,7 +223,7 @@ export function render() {
     <h1 class="titleComponents">Valor da Taxa de Pagamento</h1>
   </div>
   <div class="resultComponent">
-    <p>${valorTaxa}</p>
+    <p>R$ ${valorTaxa}</p>
   </div>
 </div>
 <div class="divComponents">
@@ -246,7 +246,7 @@ export function render() {
     <h1 class="titleComponents">Lucro</h1>
   </div>
   <div class="resultComponent">
-    <p>${lucro}</p>
+    <p>R$ ${lucro}</p>
   </div>
 </div>
 
@@ -256,7 +256,7 @@ export function render() {
 <div class="divResultadoPrecoVenda">
   <div class="resultadoPrecoVenda">
     <h1 class= "precoVendaTitle">Valor Venda</h1>
-    <p class="valorPrecoVenda">${precoVenda}</p>
+    <p class="valorPrecoVenda">R$ ${precoVenda}</p>
   </div>
 </div>
 `;
